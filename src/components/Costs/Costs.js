@@ -1,9 +1,10 @@
+import Card from '../UI/Card'
 import CostItem from './CostItem'
 import './Costs.css'
 
 function Costs({ costs }) {
   return (
-    <div className="costs">
+    <Card className="costs">
       <CostItem
         date={costs[0].date}
         description={costs[0].description}
@@ -19,7 +20,7 @@ function Costs({ costs }) {
         description={costs[2].description}
         amount={costs[2].amount}
       />
-    </div>
+    </Card>
   )
 }
 
